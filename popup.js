@@ -119,12 +119,20 @@ ner_full_site_button.onclick = function(element) {
             
             var entities = await response.json();  // Wait second response after cors
 
+            // str replace all
+            function escapeRegExp(string) {
+                return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+            }
+            function replaceAll(str, find, replace) {
+            return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+            }
+
             entities.forEach(e => {
                 var word = e['word'];
-                word = word.replace('##', '');  // Delete dashes if there are
+                //word = word.replace('##', '');  // Delete dashes if there are
                 
                 var entity = e['entity_group'];
-                text_html = text_html.replace(word, "<span style='color:white;background-color:black;'>"+word+'('+entity+')'+"</span>");
+                text_html = replaceAll(text_html, word+' ', "<span style='color:white;background-color:black;'>"+word+'('+entity+')'+"</span> ");
                 p_tags[index].innerHTML = text_html;
             });
         }
