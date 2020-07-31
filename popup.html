@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html style="width: 400px;">
+  <head>
+    <!-- CSS and FONT -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- We add bootstrap for tabs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </head>
+  <body class="w3-opacity-min w3-padding-large">
+
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#qa_tab">Q&A</a></li>
+      <li><a data-toggle="tab" href="#ner_tab">NER</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="qa_tab" class="tab-pane fade in active">
+        <span class="w3-center w3-large w3-wide">Q&A</span>
+        <div class='w3-center'>
+          <input id="qa_full_site_checkbox" class="w3-check" type="checkbox">
+          <label>İçerik olarak tüm siteyi kullan</label>
+          <textarea style="width: 100%; height: 4em;" id='qa_context_textarea' placeholder="İçerik"></textarea>
+          <textarea style="width: 100%; height: 3em;" id='qa_question_textarea' placeholder="Soru"></textarea>
+          <button class='w3-button w3-black w3-hover-brown' id="qa_answer_button">Cevapla!</button>
+          <textarea style="width: 100%; height: 6em;" id='qa_output_textarea' class="w3-margin-top w3-center" placeholder="Cevap" disabled></textarea>
+        </div>
+      </div>
+      <div id="ner_tab" class="tab-pane fade">
+        <span class="w3-center w3-large w3-wide">NER</span>
+        <div class='w3-center'>
+          <textarea style="width: 100%; height: 3em;" id='ner_context_textarea' placeholder="İçerik"></textarea>
+          <button class='w3-button w3-black w3-hover-brown' id="ner_entity_button">Sınıfları bul!</button>
+          <textarea style="width: 100%; height: 6em;" id='ner_output_textarea' class="w3-margin-top w3-center" placeholder="Sınıflar" disabled></textarea>
+          <button class='w3-button w3-black w3-hover-brown w3-margin-top' id="ner_full_site_button">Site üzerinde sınıflandırma yap!</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
