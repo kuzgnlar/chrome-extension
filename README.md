@@ -9,7 +9,7 @@ Bu uzantı son kullanıcının Kuzgunlar modelleri içerisinde bulunan Soru Ceva
 ## :exclamation: Gereksinimler
 
  * Chrome yahut Chromium tarayıcı
- * [Kuzgunlar Web API](https://github.com/kuzgnlar/model-web-interface)
+ * [Kuzgunlar Web Arayüzü - Web API](https://github.com/kuzgnlar/model-web-arayuzu)
 
 ## ⚙ Kurulum
 
