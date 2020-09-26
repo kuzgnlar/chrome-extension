@@ -1,30 +1,30 @@
+
 <img src="images/header_background.jpg" height ="38%" width="38%"></img> 
 
-# Kuzgunlar Chrome Tarayıcı Uzantısı
+# Kuzgunlar Chrome Extension
 
 ![GPL 3.0](https://img.shields.io/badge/license-GPLv3-red.svg)
 
-Bu uzantı son kullanıcının Kuzgunlar modelleri içerisinde bulunan Soru Cevap (Q&A) ve NER modellerini, gezindiği web sayfasında canlı olarak kullanabilmesini sağlamaktadır.
+This extension allows end users to use Kuzgunlar Question-Answer and NER models instantly on the web page they are browsing.
 
-## :exclamation: Gereksinimler
+## :exclamation: Requirements
 
- * Chrome yahut Chromium tarayıcı
- * [Kuzgunlar Web API](https://github.com/kuzgnlar/model-web-arayuzu)
+ * Chrome or Chromium browser
+ * [Kuzgunlar Web API](https://github.com/kuzgnlar/web-interface)
 
-## ⚙ Kurulum
+## ⚙ Setup
 
- * Öncelikle bu repoyu indirin.
- * Bilgisayarınızda **Chrome**'u açın.
- * Sağ üstte **üç noktaya** ardından **Diğer araçlar**'a ardından **Uzantılar**'a tıklayın.
- * Sağ üstte, **Geliştirici modu**'nu etkinleştirin.
- * **Paketlenmemiş öğe yükle**'yi tıklayın.
- * İndirmiş olduğunuz repoyu seçin.
- * Bu şekilde uzantı yüklenmiş oldu. Sırada [Kuzgunlar Web API](https://github.com/kuzgnlar/model-web-arayuzu) var.
- * **Web API**'yi adresinde ki yönergeleri izleyerek kendi bilgisayarınızda çalıştırın.
+ * Clone or download this repo.
+ * Open **Chrome** on your computer.
+ * Click **three dots** at the top right, then **More tools**, then **Extensions**.
+ * In the top right, enable **Developer mode**.
+ * Click **Load unpackaged**.
+ * Select the repo you just downloaded.
+ * In this way, the extension was installed. Next is the [Kuzgunlar Web API](https://github.com/kuzgnlar/web-interface).
+ * Run the **Web API** on your own computer by following the instructions at its repository.
  
-## :video_game: Kullanım
+## :video_game: Usage
 
-Uzantı simgesine tıklayın böylece uzantıyı kullanabilmeniz için gerekli olan ayar penceresi ekranda belirecektir.
+Click on the extension icon and the window to use the extension will appear on the screen.
 
 ![animation](images/extension.gif)
-
